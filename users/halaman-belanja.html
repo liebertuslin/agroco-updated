@@ -1,0 +1,523 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- fontawesome & icons -->
+  <link rel="shortcut icon" href="../assets/images/favicon.png" type="image/x-icon" />
+  <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" />
+  <!-- custom css -->
+  <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <title>Dashboard User</title>
+  </style>
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-users">
+    <div class="container">
+      <a class="navbar-brand" href="../index.html">
+        <img src="../assets/images/logo.png" alt="logo" width="120">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ms-auto">
+          <a class="nav-link link-menu">
+            <i class="ri-notification-3-fill"></i>
+          </a>
+          <a class="nav-link link-menu">
+            <i class="ri-shopping-cart-line"></i>
+          </a>
+          <div class="garis-kosong">
+          </div>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              <img src="./user-account.png" alt="icon languages" width="25">
+            </a>
+
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <div class="account">
+                <span>Saldo Pendanaan</span> <br>
+                <span>Rp. 100.000.000</span>
+              </div>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li class="account-menus">
+                <a class="dropdown-item" href="dashboard-user.html">
+                  <div class="group-menu d-flex">
+                    <div class="drop-icon">
+                      <i class="ri-home-2-line"></i>
+                    </div>
+                    Dashboard
+                  </div>
+                </a>
+              </li>
+              <li class="account-menus">
+                <a class="dropdown-item" href="dashboard-user.html">
+                  <div class="group-menu d-flex">
+                    <div class="drop-icon">
+                      <i class="ri-user-line"></i>
+                    </div>
+                    My Profile
+                  </div>
+                </a>
+              </li>
+              <li class="account-menus">
+                <a class="dropdown-item" href="dashboard-user.html">
+                  <div class="group-menu d-flex">
+                    <div class="drop-icon">
+                      <i class="ri-settings-3-line"></i>
+                    </div>
+                    Pengaturan
+                  </div>
+                </a>
+              </li>
+              <li class="account-menus">
+                <a class="dropdown-item" href="dashboard-user.html">
+                  <div class="group-menu d-flex">
+                    <div class="drop-icon">
+                      <i class="ri-logout-box-r-line"></i>
+                    </div>
+                    Keluar
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Navigation -->
+
+  <!-- Jumbotron -->
+  <div class="dasrhoard-keranjang pt-3 pb-3">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-6 col-lg-8">
+          <div class="card card-keranjang">
+            <div class="card-body p-2 text-center">
+              <div class="pre">
+                <i class="ri-arrow-left-s-line"></i>
+              </div>
+              <p class="mb-3 fw-bold">Hasil panen jagung maksimal</p>
+              <img src="produk (4).png" alt="" width="400">
+              <div class="next">
+                <i class="ri-arrow-right-s-line"></i>
+              </div>
+
+              <i class="ri-focus-line"></i>
+              <i class="ri-focus-line"></i>
+              <i class="ri-focus-line"></i>
+
+              <div class="row pt-5 d-flex justify-content-center gambar-produk">
+                <div class="col-md-6 col-lg-4 img-satu">
+                  <img src="produk (1).png" alt="" width="100">
+                </div>
+                <div class="col-md-6 col-lg-4 img-dua">
+                  <img src="produk (2).png" alt="">
+                </div>
+                <div class="col-md-6 col-lg-4 img-tiga">
+                  <img src="produk (3).png" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4">
+          <div class="card p-3">
+            <p>Komoditas Jagung</p>
+            <p>Jumlah total petani yang menerima pendaan <br>
+              <span class="fw-bold">50.000 Petani</span>
+            </p>
+            <p>Jumlah petani yang menerima pendanaan
+              komoditas Jagung <br> <span class="fw-bold">12.000 Petani</span></p>
+            <hr class="garis">
+            <p>Jumlah maksimal pendanaan yang diterima <br> <span class="fw-bold">Rp 15.000.000</span></p>
+          </div>
+          <div class="margin">
+            <div class="tombol-btn p-3">
+              <a href="">1</a>
+              <a href="">2</a>
+              <a href="">3</a>
+              <a href="">4</a>
+              <a href="">5</a>
+              <a href="">6</a>
+            </div>
+            <div class="tombol-btn p-3">
+              <a href="">7</a>
+              <a href="">8</a>
+              <a href="">9</a>
+              <a href="">10</a>
+              <a href="">11</a>
+              <a href="">12</a>
+            </div>
+          </div>
+          <div class="margin p-3">
+            <p class="fw-bold">Masukkan Luas Lahan Anda </p>
+            <div class="kotak-input p-2">
+              <p class="min">-</p>
+              <p class="satu">1</p>
+              <p class="plus">+</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Jumbotron -->
+
+  <div class="container d-flex container-produks pt4 pb-4">
+    <div class="produks-left pt-3">
+      <div class="row left-sidebar">
+        <div class="icons-kategori">
+          <i class="ri-menu-line ri-xs fw-bold"></i> Semua Kategori
+          <hr class="garis-bawah-pendek">
+        </div>
+        <ul>
+          <li><a href="">Bibit</a></li>
+          <li><a href="">Pupuk</a></li>
+          <li><a href="">Obat-Obatan</a></li>
+          <li><a href="">Alsintan</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="produks-right pt-3">
+      <div class="row right-sidebar p-2">
+        <div class="navbar-kategori">
+          <span class="urutan">Urutan</span>
+          <ul class="nav-item menu-kanan d-flex">
+            <li class="nav-link populer">
+              <a href="">Populer</a>
+            </li>
+            <li class="nav-link">
+              <a href="">Terbaru</a>
+            </li>
+            <li class="nav-link select-harga">
+              <div>
+                <label>Harga</label>
+                <select class="select-item">
+                  <option value=""></option>
+                  <option value="">Rp. 100,000</option>
+                  <option value="">Rp. 1.000,000</option>
+                  <option value="">Rp. 10,000,000</option>
+                  <option value="">Rp. 100,000,000</option>
+                </select>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row right-sidebar mb-4">
+        <div class="col-sm-12 col-md-6 col-lg-3">
+          <div class="card-produks">
+            <div class="card-body">
+              <img src="" alt="">
+            </div>
+            <div class="produks-desc mt-4">
+              <span>Jagung</span>
+              <p><span class="fw-bold">Rp 100.000</span></p>
+              <i class="ri-star-line text-warning"></i>
+              <i class="ri-star-line text-warning"></i>
+              <i class="ri-star-line text-warning"></i>
+              <i class="ri-star-line text-warning"></i>
+              <i class="ri-star-line text-warning"></i> <small class="small">(50)</small>
+
+              <div class="button-belanja">
+                <a href="#" class="lihat">Lihat</a>
+                <a onclick="validation();" href="keranjang.html" class="cart">Add to cart</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-3">
+          <div class="card-produks">
+            <div class="card-body">
+              <img src="" alt="">
+            </div>
+            <div class="produks-desc mt-4">
+              <span>Jagung</span>
+              <p><span class="fw-bold">Rp 100.000</span></p>
+              <i class="ri-star-line text-warning"></i>
+              <i class="ri-star-line text-warning"></i>
+              <i class="ri-star-line text-warning"></i>
+              <i class="ri-star-line text-warning"></i>
+              <i class="ri-star-line text-warning"></i> <small class="small">(50)</small>
+
+              <div class="button-belanja">
+                <a href="#" class="lihat">Lihat</a>
+                <a onclick="validation();" href="keranjang.html" class="cart">Add to cart</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-3">
+          <div class="card-produks">
+            <div class="card-body">
+              <img src="" alt="">
+            </div>
+            <div class="produks-desc mt-4">
+              <span>Jagung</span>
+              <p><span class="fw-bold">Rp 100.000</span></p>
+              <i class="ri-star-line text-warning"></i>
+              <i class="ri-star-line text-warning"></i>
+              <i class="ri-star-line text-warning"></i>
+              <i class="ri-star-line text-warning"></i>
+              <i class="ri-star-line text-warning"></i> <small class="small">(50)</small>
+
+              <div class="button-belanja">
+                <a href="#" class="lihat">Lihat</a>
+                <a onclick="validation();" href="keranjang.html" class="cart">Add to cart</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-3">
+          <div class="card-produks">
+            <div class="card-body">
+              <img src="" alt="">
+            </div>
+            <div class="produks-desc mt-4">
+              <span>Jagung</span>
+              <p><span class="fw-bold">Rp 100.000</span></p>
+              <i class="ri-star-line text-warning"></i>
+              <i class="ri-star-line text-warning"></i>
+              <i class="ri-star-line text-warning"></i>
+              <i class="ri-star-line text-warning"></i>
+              <i class="ri-star-line text-warning"></i> <small class="small">(50)</small>
+
+              <div class="button-belanja">
+                <a href="#" class="lihat">Lihat</a>
+                <a onclick="validation();" href="keranjang.html" class="cart">Add to cart</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row right-sidebar mb-4">
+        <div class="col-sm-12 col-md-6 col-lg-3">
+          <div class="card-produks">
+            <div class="card-body">
+              <img src="" alt="">
+            </div>
+            <div class="produks-desc mt-4">
+              <span>Jagung</span>
+              <p><span class="fw-bold">Rp 100.000</span></p>
+              <i class="ri-star-line text-warning"></i>
+              <i class="ri-star-line text-warning"></i>
+              <i class="ri-star-line text-warning"></i>
+              <i class="ri-star-line text-warning"></i>
+              <i class="ri-star-line text-warning"></i> <small class="small">(50)</small>
+
+              <div class="button-belanja">
+                <a href="#" class="lihat">Lihat</a>
+                <a onclick="validation();" href="keranjang.html" class="cart">Add to cart</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-3">
+          <div class="card-produks">
+            <div class="card-body">
+              <img src="" alt="">
+            </div>
+            <div class="produks-desc mt-4">
+              <span>Jagung</span>
+              <p><span class="fw-bold">Rp 100.000</span></p>
+              <i class="ri-star-line text-warning"></i>
+              <i class="ri-star-line text-warning"></i>
+              <i class="ri-star-line text-warning"></i>
+              <i class="ri-star-line text-warning"></i>
+              <i class="ri-star-line text-warning"></i> <small class="small">(50)</small>
+
+              <div class="button-belanja">
+                <a href="#" class="lihat">Lihat</a>
+                <a onclick="validation();" href="keranjang.html" class="cart">Add to cart</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-3">
+          <div class="card-produks">
+            <div class="card-body">
+              <img src="" alt="">
+            </div>
+            <div class="produks-desc mt-4">
+              <span>Jagung</span>
+              <p><span class="fw-bold">Rp 100.000</span></p>
+              <i class="ri-star-line text-warning"></i>
+              <i class="ri-star-line text-warning"></i>
+              <i class="ri-star-line text-warning"></i>
+              <i class="ri-star-line text-warning"></i>
+              <i class="ri-star-line text-warning"></i> <small class="small">(50)</small>
+
+              <div class="button-belanja">
+                <a href="#" class="lihat">Lihat</a>
+                <a onclick="validation();" href="keranjang.html" class="cart">Add to cart</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-3">
+          <div class="card-produks">
+            <div class="card-body">
+              <img src="" alt="">
+            </div>
+            <div class="produks-desc mt-4">
+              <span>Jagung</span>
+              <p><span class="fw-bold">Rp 100.000</span></p>
+              <i class="ri-star-line text-warning"></i>
+              <i class="ri-star-line text-warning"></i>
+              <i class="ri-star-line text-warning"></i>
+              <i class="ri-star-line text-warning"></i>
+              <i class="ri-star-line text-warning"></i> <small class="small">(50)</small>
+
+              <div class="button-belanja">
+                <a href="#" class="lihat">Lihat</a>
+                <a onclick="validation();" href="keranjang.html" class="cart">Add to cart</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row right-sidebar mb-4">
+        <div class="col-sm-12 col-md-6 col-lg-3">
+          <div class="card-produks">
+            <div class="card-body">
+              <img src="" alt="">
+            </div>
+            <div class="produks-desc mt-4">
+              <span>Jagung</span>
+              <p><span class="fw-bold">Rp 100.000</span></p>
+              <i class="ri-star-line text-warning bullet"></i>
+              <i class="ri-star-line text-warning bullet"></i>
+              <i class="ri-star-line text-warning bullet"></i>
+              <i class="ri-star-line text-warning bullet"></i>
+              <i class="ri-star-line text-warning bullet"></i> <small class="small">(50)</small>
+
+              <div class="button-belanja">
+                <a href="#" class="lihat">Lihat</a>
+                <a onclick="validation();" href="keranjang.html" class="cart">Add to cart</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-3">
+          <div class="card-produks">
+            <div class="card-body">
+              <img src="" alt="">
+            </div>
+            <div class="produks-desc mt-4">
+              <span>Jagung</span>
+              <p><span class="fw-bold">Rp 100.000</span></p>
+              <i class="ri-star-line text-warning"></i>
+              <i class="ri-star-line text-warning"></i>
+              <i class="ri-star-line text-warning"></i>
+              <i class="ri-star-line text-warning"></i>
+              <i class="ri-star-line text-warning"></i> <small class="small">(50)</small>
+
+              <div class="button-belanja">
+                <a href="#" class="lihat">Lihat</a>
+                <a onclick="validation();" href="keranjang.html" class="cart">Add to cart</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-3">
+          <div class="card-produks">
+            <div class="card-body">
+              <img src="" alt="">
+            </div>
+            <div class="produks-desc mt-4">
+              <span>Jagung</span>
+              <p><span class="fw-bold">Rp 100.000</span></p>
+              <i class="ri-star-line text-warning"></i>
+              <i class="ri-star-line text-warning"></i>
+              <i class="ri-star-line text-warning"></i>
+              <i class="ri-star-line text-warning"></i>
+              <i class="ri-star-line text-warning"></i> <small class="small">(50)</small>
+
+              <div class="button-belanja">
+                <a href="#" class="lihat">Lihat</a>
+                <a onclick="validation();" href="keranjang.html" class="cart">Add to cart</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-3">
+          <div class="card-produks">
+            <div class="card-body">
+              <img src="" alt="">
+            </div>
+            <div class="produks-desc mt-4">
+              <span>Jagung</span>
+              <p><span class="fw-bold">Rp 100.000</span></p>
+              <i class="ri-star-line text-warning"></i>
+              <i class="ri-star-line text-warning"></i>
+              <i class="ri-star-line text-warning"></i>
+              <i class="ri-star-line text-warning"></i>
+              <i class="ri-star-line text-warning"></i> <small class="small">(50)</small>
+
+              <div class="button-belanja">
+                <a href="#" class="lihat">Lihat</a>
+                <a onclick="validation()" class="cart" href="#">Add to cart</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer bg-dark" id="footer">
+    <div class="container d-flex justify-content-center">
+      <div class="row">
+        <div class="col">
+          <p class="text-light">Copyright 2022-2028 © PT. Emutan Indonesia telah Berizin dan Diawasi oleh <img
+              src="../assets/images/izin-ojk.png" alt="ojk" class="img-fluid" width="45"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Footer -->
+
+  <!-- icons ionics -->
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+    integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+    crossorigin="anonymous"></script>
+  <script src="../assets/js/script.js"></script>
+
+  <script>
+    function validation() {
+      swal({
+        // title: "Good job!",
+        text: "Produk berhasil ditambahkan ke keranjang belanja!",
+        icon: "success"
+      });
+    }
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- fontawesome & icons -->
+  <link rel="shortcut icon" href="../assets/images/favicon.png" type="image/x-icon" />
+  <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" />
+  <!-- custom css -->
+  <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <title>Dashboard User</title>
+  </style>
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-users">
+    <div class="container">
+      <a class="navbar-brand" href="../index.html">
+        <img src="../assets/images/logo.png" alt="logo" width="120">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ms-auto">
+          <a class="nav-link link-menu">
+            <i class="ri-notification-3-fill"></i>
+          </a>
+          <a class="nav-link link-menu">
+            <i class="ri-shopping-cart-line"></i>
+          </a>
+          <div class="garis-kosong">
+          </div>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              <img src="./user-account.png" alt="icon languages" width="25">
+            </a>
+
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <div class="account">
+                <span>Saldo Pendanaan</span> <br>
+                <span>Rp. 100.000.000</span>
+              </div>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li class="account-menus">
+                <a class="dropdown-item" href="dashboard-user.html">
+                  <div class="group-menu d-flex">
+                    <div class="drop-icon">
+                      <i class="ri-home-2-line"></i>
+                    </div>
+                    Dashboard
+                  </div>
+                </a>
+              </li>
+              <li class="account-menus">
+                <a class="dropdown-item" href="dashboard-user.html">
+                  <div class="group-menu d-flex">
+                    <div class="drop-icon">
+                      <i class="ri-user-line"></i>
+                    </div>
+                    My Profile
+                  </div>
+                </a>
+              </li>
+              <li class="account-menus">
+                <a class="dropdown-item" href="dashboard-user.html">
+                  <div class="group-menu d-flex">
+                    <div class="drop-icon">
+                      <i class="ri-settings-3-line"></i>
+                    </div>
+                    Pengaturan
+                  </div>
+                </a>
+              </li>
+              <li class="account-menus">
+                <a class="dropdown-item" href="dashboard-user.html">
+                  <div class="group-menu d-flex">
+                    <div class="drop-icon">
+                      <i class="ri-logout-box-r-line"></i>
+                    </div>
+                    Keluar
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Navigation -->
+
+  <!-- Jumbotron -->
+  <div class="container p-4">
+    <div class="row">
+      <div class="col-sm-12 col-md-6 col-lg-8">
+        <div class="card card-keranjang belanja p-5" id="cart-item">
+          <h6><span class="fw-bold">Keranjang</span></h6>
+          <div class="all-check">
+            <input type="checkbox">
+            <label>Pilih Semua</label>
+          </div>
+          <hr class="garis-bawah">
+          <div class="row">
+            <div class="col-sm-12 col-md-6 col-lg-12 p-2 d-flex" id="box-items">
+              <div class="cart-items">
+                <input type="checkbox" id="option-all">
+                <img src="./item.png">
+                <div class="cart-desc">
+                  <p>Project Name</p>
+                  <p><span>Rp. 200,000</span></p>
+                </div>
+              </div>
+              <div class="add-item">
+                <div class="min">
+                  <a href="">-</a>
+                </div>
+                <div class="number">
+                  <a href="">1</a>
+                </div>
+                <div class="plus">
+                  <a href="">+</a>
+                </div>
+              </div>
+            </div>
+            <div class="cart-bottom">
+              <input type="text" placeholder="Tulis Catatan">
+              <div class="garis-kosong"></div>
+              <a href="" class="text-decoration-none text-dark" onclick="validation();">
+                <i class="ri-delete-bin-line""></i>
+              </a>
+            </div>
+          </div>
+          <hr class=" garis-bawah">
+
+                  <div class="row">
+                    <div class="col-sm-12 col-md-6 col-lg-12 p-2 d-flex" id="box-items">
+                      <div class="cart-items">
+                        <input type="checkbox" id="option-all">
+                        <img src="./item.png">
+                        <div class="cart-desc">
+                          <p>Project Name</p>
+                          <p><span>Rp. 200,000</span></p>
+                        </div>
+                      </div>
+                      <div class="add-item">
+                        <div class="min">
+                          <a href="">-</a>
+                        </div>
+                        <div class="number">
+                          <a href="">1</a>
+                        </div>
+                        <div class="plus">
+                          <a href="">+</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="cart-bottom">
+                      <input type="text" placeholder="Tulis Catatan">
+                      <div class="garis-kosong"></div>
+                      <a href="" class="text-decoration-none text-dark" onclick="validation();">
+                        <i class="ri-delete-bin-line""></i>
+                      </a>
+                    </div>
+                  </div>
+                  <hr class=" garis-bawah">
+
+                          <div class="row">
+                            <div class="col-sm-12 col-md-6 col-lg-12 p-2 d-flex" id="box-items">
+                              <div class="cart-items">
+                                <input type="checkbox" id="option-all">
+                                <img src="./item.png">
+                                <div class="cart-desc">
+                                  <p>Project Name</p>
+                                  <p><span>Rp. 200,000</span></p>
+                                </div>
+                              </div>
+                              <div class="add-item">
+                                <div class="min">
+                                  <a href="">-</a>
+                                </div>
+                                <div class="number">
+                                  <a href="">1</a>
+                                </div>
+                                <div class="plus">
+                                  <a href="">+</a>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="cart-bottom">
+                              <input type="text" placeholder="Tulis Catatan">
+                              <div class="garis-kosong"></div>
+                              <a href="" class="text-decoration-none text-dark" onclick="validation();">
+                                <i class="ri-delete-bin-line""></i>
+                              </a>
+                            </div>
+                          </div>
+                          <hr class=" garis-bawah">
+                            </div>
+                          </div>
+                          <div class="col-sm-12 col-md-6 col-lg-3">
+                            <div class="card p-3">
+                              <div class="card-title mb-3" id="cart-title">
+                                <span>Saldo</span>
+                                <span>Rp 20.000.000</span>
+                              </div>
+                              <hr class="garis-bawah">
+                              <h6><span>Ringkasan Belanja</span></h6>
+                              <div class="jenis-item mt-3">
+                                <div class="item-product">
+                                  <span>Pupuk</span>
+                                  <span>Rp. 300,00</span>
+                                </div><br>
+                                <div class="item-product">
+                                  <span>Bibit Cabe</span>
+                                  <span>Rp. 350,00</span> <br>
+                                </div>
+                                <div class="item-product">
+                                  <span>Obat-Obatan</span>
+                                  <span>Rp. 590,00</span> <br>
+                                </div>
+                                <div class="item-product">
+                                  <span>Alsintan</span>
+                                  <span>Rp. 899,00</span>
+                                </div>
+                              </div>
+
+                              <a href="" class="button-item-terinput">Beli (4)</a>
+                            </div>
+                          </div>
+                    </div>
+                  </div>
+            </div>
+            <!-- Jumbotron -->
+
+            <!-- icons ionics -->
+
+            <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+            <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+              integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+              crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+              integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+              crossorigin="anonymous"></script>
+            <script src="../assets/js/script.js"></script>
+
+            <script>
+              function validation() {
+                swal({
+                  // title: "Good job!",
+                  text: "Produk berhasil dihapus!",
+                  icon: "success"
+                });
+              }
+            </script>
+
+</body>
+
+</html>
